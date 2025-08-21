@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dara Manis Cafe & Resto</title>
+    <link rel="shortcut icon" href="logo dara manis remove.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .header {
+           background-image: url('dara manis logo.jpg'); 
+           background-size:  cover;
+           background-position: center;
+           height: 55vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: white; 
+           text-align: center; 
+           padding: 50px; 
+           margin-top: 1rem;
+}
+
+        .handwriting {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        .menu-item {
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/249919b5-b7c5-4f6e-bd20-5bf9eb92c400.png') center/cover no-repeat;
+            min-height: 60vh;
+        }
+        
+        .category-header {
+            position: relative;
+        }
+        
+        .category-header::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #f97316;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 40vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-orange-500 handwriting">Dara Manis Cafe & Resto</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#menu" class="text-orange-600 hover:text-orange-500">Makanan</a>
+                    <a href="#minuman" class="text-gray-600 hover:text-orange-500">Minuman</a>
+                    <a href="#best seller" class="text-gray-600 hover:text-orange-500">Best Seller</a>
+                    <a href="#contact" class="text-gray-600 hover:text-orange-500">Contact</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Menu Section -->
+    <section class="container mx-auto px-6 py-16">
+      <div class="header">
+      </div>
+
+
+        <!-- Appetizers -->
+         <section id="menu">
+            <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 category-header">Makanan</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 10.jpg" alt="Aneka cumi/sotong" class="w-full ">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Cumi / Sotong</h4>
+                        <p class="text-gray-600 mb-4">Cumi yang segar langsung dari nelayan⠀ ⠀  ᅠ⠀ ⠀</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.30.000</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 2.jpg" alt="Aneka Cumi" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Mie </h4>
+                        <p class="text-gray-600 mb-4">Cocok untuk yang lagi tidak mau makan nasi</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.13.000-15.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 3.jpg" alt="Aneka Ayam" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Ayam</h4>
+                        <p class="text-gray-600 mb-4">Ayam yang Enak di makan kapan pun dan dimana pun</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.20.000-30.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 4.jpg" alt="Aneka Ikan" class="w-full ">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Ikan</h4>
+                        <p class="text-gray-600 mb-4">Ikan segar yang langsung⠀ ⠀  ᅠ⠀ ⠀⠀ ⠀  ᅠ⠀ ⠀</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.10.000/Ons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 5.jpg" alt="Aneka Nasi goreng" class="w-full ">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Nasi goreng</h4>
+                        <p class="text-gray-600 mb-4">Nasi goreng yang enak di makan saat panas</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.15.000-20.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 6.jpg" alt="Aneka Sayuran" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Sayuran</h4>
+                        <p class="text-gray-600 mb-4">Sayuran yang enak untuk pendamping makanan</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.20.000-30.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 7 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 8.jpg" alt="Aneka Sop" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Sop</h4>
+                        <p class="text-gray-600 mb-4">Sop yang panas cocok untuk ketika hujan⠀ ⠀  ᅠ⠀ ⠀</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.30.000-50.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 9.jpg" alt="Aneka Makanan lainnya" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Makanan lainnya</h4>
+                        <p class="text-gray-600 mb-4">Jika kamu BOSAN dengan makanan biasa, kamu bisa mencoba ini</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.10.000-20.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 12.jpg" alt="Aneka kepiting" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka kepiting</h4>
+                        <p class="text-gray-600 mb-4">Kepiting yang segar dan enak⠀ ⠀ᅠ⠀ ⠀⠀ ⠀⠀ ⠀</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.35.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </section>
+
+        <!-- Main Courses -->
+         <section id="minuman">
+        <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 category-header">Minuman</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis 1.jpg" alt="Aneka Jus" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Jus</h4>
+                        <p class="text-gray-600 mb-4">Jus yang di buat dari buah-buah segar ⠀ ⠀ᅠ⠀ ⠀</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.20.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis 11.jpg" alt="Aneka Cappucino" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Cappucino</h4>
+                        <p class="text-gray-600 mb-4">Cappucino yang siap untuk menemani hari mu</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.8.000-15.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis 13.jpg" alt="Aneka Teh" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Teh</h4>
+                        <p class="text-gray-600 mb-4">Teh yang enak untuk pendamping makan mu</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.5.000-15.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis 14.jpg" alt="Aneka Milo" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Milo</h4>
+                        <p class="text-gray-600 mb-4">Milo yang enak untuk menemani makan mu</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.8.000-15.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis 15.jpg" alt="Aneka Minuman lainnya" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Minuman lainnya</h4>
+                        <p class="text-gray-600 mb-4">Menu yang cocok untuk penutup⠀ ⠀  ᅠ⠀ ⠀</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.10.000-25.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis 7.jpg" alt="Aneka Kopi" class="w-full">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Kopi</h4>
+                        <p class="text-gray-600 mb-4">Kopi yang cocok umtuk menemani mu kerja</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-orange-500">Rp.5.000-10.000 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </section>
+
+
+        <!-- Desserts -->
+         <section id="best seller">
+         <div class="mb-16">
+            <h3 class="text-2xl font-bold mb-8 category-header">Best Seller</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 12.jpg" alt="Aneka kepiting" class="w-full object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka kepiting</h4>
+                        <p class="text-gray-600 mb-4">Keping Menu best seller yang adalah di Dara Manis</p>
+                        <div class="flex justify-between items-center">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 4.jpg" alt="Aneka Ikan" class="w-full object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Ikan</h4>
+                        <p class="text-gray-600 mb-4">Ikan yang segar termasuk menu best di Dara Manis</p>
+                        <div class="flex justify-between items-center">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 10.jpg" alt="Aneka Cumi" class="w-full object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Cumi</h4>
+                        <p class="text-gray-600 mb-4">Cumi yang enak termasuk menu best seller di Dara Manis</p>
+                        <div class="flex justify-between items-center">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis mkn 3.jpg" alt="Aneka Ayam" class="w-full object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka Ikan</h4>
+                        <p class="text-gray-600 mb-4">Ayam adalah makanan andalan orang ke Dara Manis terkhusus Ayam bakar</p>
+                        <div class="flex justify-between items-center">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md menu-item">
+                    <img src="Dara Manis 15.jpg" alt="Aneka minuman lainnya" class="w-full object-cover">
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl mb-2">Aneka minuman lainnya</h4>
+                        <p class="text-gray-600 mb-4">Di sini ysng termasuk menu best seller di Dara Manis adalah sop buah</p>
+                        <div class="flex justify-between items-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         </section>
+    </section>
+
+
+
+    <!-- Footer -->
+     <section id="contact">
+    <footer class="bg-orange-500 hover text-white px-4 py-2 text-sm">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 handwriting">Dara Manis</h3>
+                    <p class="text-white-400">Enak nya Juara yang bisa bikin kamu balik lagi</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Jam</h4>
+                    <p class="text-white-400 mb-2">Senin - Minggu: 9.00 Pagi - 21.00 malam</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <p class="text-white-400 mb-2">HP : 082120988929</p>
+                    <p class="text-white-400 mb-2"> ⠀ ⠀ 082120988929</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-white-400">
+                <p>© 2025 Dara Manis. Cafe & Resto.</p>
+            </div>
+        </div>
+    </footer>
+     </section>
+
+
+
+    <script>
+        // Simple JavaScript for cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('button:contains("Add to Order")');
+            const cartModal = document.getElementById('cartModal');
+            const closeModal = document.getElementById('closeModal');
+            
+            // Add click event to all Add to Order buttons
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartModal.classList.remove('hidden');
+                });
+            });
+            
+            // Close modal when X is clicked
+            closeModal.addEventListener('click', function() {
+                cartModal.classList.add('hidden');
+            });
+            
+            // Close modal when clicking outside
+            cartModal.addEventListener('click', function(e) {
+                if (e.target === cartModal) {
+                    cartModal.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
